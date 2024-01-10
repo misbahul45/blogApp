@@ -1,10 +1,10 @@
 import PostCard from "@/components/postCard/postCard"
 
-const fetchApi=async()=>{
-  const res=await fetch('https://jsonplaceholder.typicode.com/posts')
-  const data=await res.json()
-  return data
-}
+ const fetchApi=async()=>{
+   const res=await fetch('https://jsonplaceholder.typicode.com/posts')
+   const data=await res.json()
+   return data
+ }
 const blog = async() => {
   const posts=await fetchApi()
   return (
